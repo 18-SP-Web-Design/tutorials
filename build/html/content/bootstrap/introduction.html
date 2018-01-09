@@ -1,0 +1,185 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bootstrap &#8212; ITECH 270 0.1b documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1b',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Welcome to ITECH 270" href="../../index.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="bootstrap">
+<h1>Bootstrap<a class="headerlink" href="#bootstrap" title="Permalink to this headline">¶</a></h1>
+<p>Bootstrap is a free, <em>responsive</em>, <em>open-source</em>, <em>front-end</em> framework for web-development that is designed from a mobile-first design philosophy. This means that a properly designed Website that uses Bootstrap will look good on mobile browsers as well as it does on larger screens.</p>
+<dl class="docutils">
+<dt><strong>responsive</strong></dt>
+<dd>Responsive web design is less of a set of hard rules and more an approach and strategy to web design to ensure that a web page will render well on many different sizes of screens. That is should look good across a variety of devices and screen sizes.</dd>
+<dt><strong>open-source</strong></dt>
+<dd>A philosophy and practice centered around keeping the source-code for a piece of software open and freely available to whomever decides to look at it and figure out how it works, alter it to suit their own needs, or even contribute to the main code base.</dd>
+<dt><strong>front-end</strong></dt>
+<dd>Front-end web development is exclusively concerned with developing the part of the Web site that the user can see and interact with directly. This is to differentiate it between back-end development which is concerned with “under-the-hood” functionality such as databases, form validation, and user-transparent processes. Front-end development typically involves using HTML, CSS, and JavaScript for the Web application. Front-end and back-end development are sometimes performed by the same group of people or divided between two or more teams whose sole purpose is one or the other.</dd>
+<dt><strong>CDN</strong></dt>
+<dd>A content delivery network is a way of using common software libraries in web-development without having to download and install them yourself. Typically, all you have to do is include a URL to the CDN code in a script or link tag in your file, which will give you complete access to all of the functionality of the library without having to download it yourself.</dd>
+</dl>
+<div class="section" id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>There is plenty of great documentation available on the <a class="reference external" href="https://getbootstrap.com/">Bootstrap website</a>, and while you are working through this tutorial, you should also have the main documentation open in another tab so that you can cross-reference anything that you see in these tutorials to see how it fits in the larger picture. In these tutorials, we will only look at a subset of all of the things that are possible. Once you get a “feel” for Bootstrap, it will kind of click and you will see how the use of Bootstrap’s classes can streamline the process of front-end development.</p>
+<p>So how do you “use” Bootstrap? For the purposes of this tutorial, we will use a <strong>content delivery network</strong>, or <strong>CDN</strong>, to include the Bootstrap source code in our HTML file. It’s the easiest and fastest way to get up and running with Bootstrap and it’s awfully convenient.</p>
+<ol class="arabic">
+<li><p class="first">Create a blank HTML file and name it <em>bs_test.html</em>. Add in all of the typical meta tags, doctype declarations that you normally would. Here is a template you may use:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Hello Boostrap!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello Bootstrap!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Go ahead and open the web page in a browser and observe the page. It should look about how you’d expect.</p>
+<a class="reference internal image-reference" href="../../_images/hello_bootstrap.png"><img alt="../../_images/hello_bootstrap.png" src="../../_images/hello_bootstrap.png" style="width: 50%;" /></a>
+</li>
+<li><p class="first">Next, we’ll add the Bootstrap CDN links and tags. In the <em>head</em> element, add the bootstrap CDN link:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css&quot;</span> <span class="n">integrity</span><span class="o">=</span><span class="s2">&quot;sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy&quot;</span> <span class="n">crossorigin</span><span class="o">=</span><span class="s2">&quot;anonymous&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>And then, at the bottom of the page, just before the closing <em>body</em> tag, add the JavaScript libraries for both Bootstrap and JQuery (more on JQuery in the next chapter; for n ow, just add it and trust):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot;</span> <span class="n">integrity</span><span class="o">=</span><span class="s2">&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot;</span> <span class="n">crossorigin</span><span class="o">=</span><span class="s2">&quot;anonymous&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&quot;</span> <span class="n">integrity</span><span class="o">=</span><span class="s2">&quot;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&quot;</span> <span class="n">crossorigin</span><span class="o">=</span><span class="s2">&quot;anonymous&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js&quot;</span> <span class="n">integrity</span><span class="o">=</span><span class="s2">&quot;sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4&quot;</span> <span class="n">crossorigin</span><span class="o">=</span><span class="s2">&quot;anonymous&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Finally, we add one more meta tag to the <em>head</em> element of the page:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">meta</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;viewport&quot;</span> <span class="n">content</span><span class="o">=</span><span class="s2">&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This is a magic meta tag that tells web browsers that they should account for the width of the screen when rendering the page.</p>
+</li>
+<li><p class="first">Altogether, our new template will look like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css&quot; integrity=&quot;sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy&quot; crossorigin=&quot;anonymous&quot;&gt;
+
+    &lt;title&gt;Hello Boostrap!&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello Bootstrap!&lt;/h1&gt;
+
+    &lt;!-- Optional JavaScript --&gt;
+    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.slim.min.js&quot; integrity=&quot;sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js&quot; integrity=&quot;sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js&quot; integrity=&quot;sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Refresh the browser and observe the subtle change. “What?” you say, “All it did was change the font!” Oh, it did much more than that, as we shall see.</p>
+<img alt="../../_images/bootstrap_added.png" src="../../_images/bootstrap_added.png" />
+</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">ITECH 270</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bootstrap</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../../index.html" title="previous chapter">Welcome to ITECH 270</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Eric Kuha.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/content/bootstrap/introduction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
