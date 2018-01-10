@@ -24,6 +24,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Bootstrap" href="introduction.html" />
    
   <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
   
@@ -43,7 +44,37 @@
 <h1>Containers<a class="headerlink" href="#containers" title="Permalink to this headline">¶</a></h1>
 <p>So how do I use Bootstrap? If you’ve gotten this far, then we’ll assume that you know about CSS and especially CSS classes. The majority of what you’ll do when you use Bootstrap to enhance your Web page is simply apply classes to HTML tags that are already there.</p>
 <p>You will, however, often have to surround chunks of code with <em>div</em> tags in order to do this. This does, to some extent, violate the semantic philosophy of HTML, but, the end result is so nice that the compromise is kind of worth it.</p>
-<p>So let’s start with the most fundmaental Bootsrap classes, <strong>container</strong> and <strong>container-fluid</strong>.</p>
+<p>There are two main container classes in Bootstrap:</p>
+<ol class="arabic simple">
+<li><code class="code docutils literal"><span class="pre">.container</span></code> is a fixed-width container that takes up the strip in the center of the page. It’s the one you’ll most often use.</li>
+<li><code class="code docutils literal"><span class="pre">.container-fluid</span></code> is a container that fills the entire width of the viewport (the browser window).</li>
+</ol>
+<p>In addition to these, we will look at the basics of the Bootstrap grid system and the <code class="code docutils literal"><span class="pre">.jumbotron</span></code> class.</p>
+<p><strong>Note:</strong> You don’t need containers to use a lot of Bootstrap’s built-in widgets, however, you will need it to use the really handy Bootstrap grid system. Let’s try it:</p>
+<ol class="arabic">
+<li><p class="first">Clone the repository for this tutorial if you have not already //TODO link to repo</p>
+</li>
+<li><p class="first">The majority of Bootstrap’s styling is done by surrounding various code snippets with <code class="code docutils literal"><span class="pre">&lt;div&gt;</span></code> tags using Bootstrap classes. So let’s surround the first part of the page with a <code class="code docutils literal"><span class="pre">&lt;div</span></code> and add the <code class="code docutils literal"><span class="pre">.jumbotron</span></code> class as well as center the text:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;div class=&quot;jumbotron text-center&quot;&gt;
+    &lt;h1&gt;Welcome to my page!&lt;/h1&gt;
+    &lt;p&gt;Feel free to look around and stay a while.&lt;/p&gt;
+&lt;/div&gt;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Reload the web page and observe the results. There plenty of ways that we can use the jumbotron container. You can add a background image to it to add visual interest, for example.</p>
+</li>
+<li><p class="first">Next, Surround the rest of the page content with another div tag and the <code class="code docutils literal"><span class="pre">.container</span></code> class, like so:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">&quot;container&quot;</span><span class="o">&gt;</span>
+<span class="o">...</span> <span class="n">Your</span> <span class="n">Code</span> <span class="n">Here</span> <span class="o">...</span>
+<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Reloading the page will give you this:</p>
+<a class="reference internal image-reference" href="../../_images/container1.png"><img alt="../../_images/container1.png" src="../../_images/container1.png" style="width: 100%;" /></a>
+</li>
+</ol>
 </div>
 
 
@@ -62,14 +93,17 @@
 
 
 <h3>Navigation</h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction.html">Bootstrap</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Bootstrap</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="introduction.html">Bootstrap</a><ul>
+      <li>Previous: <a href="introduction.html" title="previous chapter">Bootstrap</a></li>
+  </ul></li>
   </ul></li>
 </ul>
 </div>
