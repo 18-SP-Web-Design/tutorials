@@ -34,3 +34,4 @@ In addition to these, we will look at the basics of the Bootstrap grid system an
    .. image:: images/container1.png
         :width: 100%
 
+
