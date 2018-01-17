@@ -1,0 +1,6 @@
+.jumbotron {
+    background-image: url("discovery.jpg");
+    min-height: 50%;
+    background-size: cover;
+}
+

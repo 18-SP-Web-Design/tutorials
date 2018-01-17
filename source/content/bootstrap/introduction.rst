@@ -27,63 +27,78 @@ There is plenty of great documentation available on the `Bootstrap website`_, an
 
 So how do you "use" Bootstrap? For the purposes of this tutorial, we will use a **content delivery network**, or **CDN**, to include the Bootstrap source code in our HTML file. It's the easiest and fastest way to get up and running with Bootstrap and it's awfully convenient.
 
-#. Create a blank HTML file and name it *bs_test.html*. Add in all of the typical meta tags, doctype declarations that you normally would. Here is a template you may use::
+#. Create a blank HTML file and name it *bs_test.html*. Add in all of the typical meta tags, doctype declarations that you normally would. Here is a template you may use:
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Hello Boostrap!</title>
-    </head>
-    <body>
-        <h1>Hello Bootstrap!</h1> 
-    </body>
-    </html>
+   .. code-block:: html
+       :linenos:
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Hello Boostrap!</title>
+        </head>
+        <body>
+            <h1>Hello Bootstrap!</h1> 
+        </body>
+        </html>
 
 #. Go ahead and open the web page in a browser and observe the page. It should look about how you'd expect.
 
    .. image:: images/hello_bootstrap.png
        :width: 50%
 
-#. Next, we'll add the Bootstrap CDN links and tags. In the *head* element, add the bootstrap CDN link::
+#. Next, we'll add the Bootstrap CDN links and tags. In the *head* element, add the bootstrap CDN link:
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+   .. code-block:: html
+       :linenos:
 
-   And then, at the bottom of the page, just before the closing *body* tag, add the JavaScript libraries for both Bootstrap and JQuery (more on JQuery in the next chapter; for n ow, just add it and trust)::
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
-#. Finally, we add one more meta tag to the *head* element of the page::
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-   This is a magic meta tag that tells web browsers that they should account for the width of the screen when rendering the page.
-
-#. Altogether, our new template will look like this::
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 
-        <title>Hello Boostrap!</title>
-    </head>
-    <body>
-        <h1>Hello Bootstrap!</h1> 
+   And then, at the bottom of the page, just before the closing *body* tag, add the JavaScript libraries for both Bootstrap and JQuery (more on JQuery in the next chapter; for n ow, just add it and trust):
+   
+   .. code-block:: html
+       :linenos:
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    </body>
-    </html>
+
+#. Finally, we add one more meta tag to the *head* element of the page:
+
+   .. code-block:: html
+       :linenos:
+
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   This is a magic meta tag that tells web browsers that they should account for the width of the screen when rendering the page.
+
+#. Altogether, our new template will look like this:
+
+   .. code-block:: html
+       :linenos:
+
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+           <!-- Bootstrap CSS -->
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+           <title>Hello Boostrap!</title>
+       </head>
+       <body>
+           <h1>Hello Bootstrap!</h1> 
+
+           <!-- Optional JavaScript -->
+           <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+           <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+       </body>
+       </html>
 
 #. Refresh the browser and observe the subtle change. "What?" you say, "All it did was change the font!" Oh, it did much more than that, as we shall see.
 
