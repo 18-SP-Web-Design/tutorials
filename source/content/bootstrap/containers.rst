@@ -113,7 +113,7 @@ For fun, let's add an image to our :code:`.jumbotron`. This will give us the cha
 
 #. Find an image that you wish to use. Ideally, use a fairly large image. I am using this image
 
-   .. image:: res/discovery.jpg
+   .. image:: res/discovery2.jpg
        :width: 50%
 
 #. Create a new text file and call it :code:`style.css`. We are going to apply some extra style directly to the :code:`.jumbotron` class. What's that you say? How can we do that? Since Bootstrap is basically just a css file to begin with, you can apply your own styles to any of those classes as well. So let's use the following code:
@@ -122,8 +122,14 @@ For fun, let's add an image to our :code:`.jumbotron`. This will give us the cha
        :linenos:
 
        .jumbotron {
-           background-image: url("discovery.jpg");
+           background: #000 url("discovery2.jpg") no-repeat center center;
            background-size: cover;
+           padding-top: 100px;
+           padding-bottom: 100px;
+       }
+
+       .jumbotron h1,p {
+           color: white;
        }
 
 #. Then, to the html file, let's add our link to the new stylesheet. Bear in mind that for this simple example, I'm keeping everything in the same folder. In any production site, I would almost certainly split up images, stylesheets, and html files into separate folders.
@@ -132,3 +138,7 @@ For fun, let's add an image to our :code:`.jumbotron`. This will give us the cha
        :linenos:
 
        <link rel="stylesheet" href="style.css" type="text/css" />
+
+   You may have to fiddle around with some of these settings depending on the image you are using to make it look right at all screen widths, however, this is the result of the above settings:
+
+   .. image:: 
