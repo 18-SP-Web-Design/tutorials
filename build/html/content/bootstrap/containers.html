@@ -178,15 +178,27 @@
 <p>For fun, let’s add an image to our <code class="code docutils literal"><span class="pre">.jumbotron</span></code>. This will give us the chance to see how Bootstrap can mesh with the stuff that we’ve already done in this course. So, what we’ll do is add a stylesheet of our own to this web page.</p>
 <ol class="arabic">
 <li><p class="first">Find an image that you wish to use. Ideally, use a fairly large image. I am using this image</p>
-<a class="reference internal image-reference" href="../../_images/discovery.jpg"><img alt="../../_images/discovery.jpg" src="../../_images/discovery.jpg" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../../_images/discovery2.jpg"><img alt="../../_images/discovery2.jpg" src="../../_images/discovery2.jpg" style="width: 50%;" /></a>
 </li>
 <li><p class="first">Create a new text file and call it <code class="code docutils literal"><span class="pre">style.css</span></code>. We are going to apply some extra style directly to the <code class="code docutils literal"><span class="pre">.jumbotron</span></code> class. What’s that you say? How can we do that? Since Bootstrap is basically just a css file to begin with, you can apply your own styles to any of those classes as well. So let’s use the following code:</p>
-<div class="highlight-css"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">jumbotron</span> <span class="p">{</span>
-    <span class="k">background-image</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&quot;discovery.jpg&quot;</span><span class="p">);</span>
+<div class="highlight-css"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nc">jumbotron</span> <span class="p">{</span>
+    <span class="k">background</span><span class="p">:</span> <span class="mh">#000</span> <span class="nb">url</span><span class="p">(</span><span class="s2">&quot;discovery2.jpg&quot;</span><span class="p">)</span> <span class="kc">no-repeat</span> <span class="kc">center</span> <span class="kc">center</span><span class="p">;</span>
     <span class="k">background-size</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+    <span class="k">padding-top</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+    <span class="k">padding-bottom</span><span class="p">:</span> <span class="mi">100</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">jumbotron</span> <span class="nt">h1</span><span class="o">,</span><span class="nt">p</span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
@@ -195,6 +207,8 @@
 <div class="highlight-html"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span> <span class="p">/&gt;</span>
 </pre></div>
 </td></tr></table></div>
+<p>You may have to fiddle around with some of these settings depending on the image you are using to make it look right at all screen widths, however, this is the result of the above settings:</p>
+<a class="reference internal image-reference" href="../../_images/jumbotron.png"><img alt="../../_images/jumbotron.png" src="../../_images/jumbotron.png" style="width: 100%;" /></a>
 </li>
 </ol>
 </div>

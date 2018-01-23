@@ -141,4 +141,5 @@ For fun, let's add an image to our :code:`.jumbotron`. This will give us the cha
 
    You may have to fiddle around with some of these settings depending on the image you are using to make it look right at all screen widths, however, this is the result of the above settings:
 
-   .. image:: 
+   .. image:: images/jumbotron.png
+       :width: 100%
