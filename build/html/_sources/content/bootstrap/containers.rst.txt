@@ -132,6 +132,8 @@ For fun, let's add an image to our :code:`.jumbotron`. This will give us the cha
            color: white;
        }
 
+   A couple of things to take note of. First, we are specifically selecting the :code:`.jumbotron` class, which will no overwrite the Bootstrap class, but instead add styles to it. If you link this stylesheet *after* the Bootstrap stylesheet, this will get loaded after it. Next, pay careful attention to what each style is doing. The background style sets the image and a background color (in this case, black). It sets it to not repeat and center it vertically and horizontally. Setting the background-size to cover tells the browser to scale the image as large as possible without stretching. It will crop anything that doesn't fit. And then we added some padding to make it fit nicely on the page.
+
 #. Then, to the html file, let's add our link to the new stylesheet. Bear in mind that for this simple example, I'm keeping everything in the same folder. In any production site, I would almost certainly split up images, stylesheets, and html files into separate folders.
 
    .. code-block:: html
@@ -139,7 +141,9 @@ For fun, let's add an image to our :code:`.jumbotron`. This will give us the cha
 
        <link rel="stylesheet" href="style.css" type="text/css" />
 
-   You may have to fiddle around with some of these settings depending on the image you are using to make it look right at all screen widths, however, this is the result of the above settings:
+  You may have to fiddle around with some of these settings depending on the image you are using to make it look right at all screen widths, however, this is the result of the above settings:
 
    .. image:: images/jumbotron.png
        :width: 100%
+
+  One thing to remember here is that you will have to carefully select a photo that works well as a jumbotron image. Some do not. 
