@@ -50,3 +50,7 @@ And with the Bootstrap CDN added:
 
     .. image:: images/form.png
         :width: 100%
+
+In general, forms are very simple and straightforward and, like almost all Bootstrap components, are created by applying simple Bootstrap classes to HTML elements that already exist.
+
+For more information on Forms, `check out the documentation <https://getbootstrap.com/docs/4.0/components/forms/>`_.
