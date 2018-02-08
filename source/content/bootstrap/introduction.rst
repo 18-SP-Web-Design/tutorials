@@ -12,6 +12,9 @@ Chapter Contents
     figures
     buttons
 
+Introduction
+~~~~~~~~~~~~
+
 Bootstrap is a free, *responsive*, *open-source*, *front-end* framework for web-development that is designed from a mobile-first design philosophy. This means that a properly designed Website that uses Bootstrap will look good on mobile browsers as well as it does on larger screens.
 
 **responsive**

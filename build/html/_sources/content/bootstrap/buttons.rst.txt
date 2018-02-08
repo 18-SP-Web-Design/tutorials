@@ -29,9 +29,12 @@ We're going to see how to add icons to buttons and to use them as buttons in the
 
 #. This will create a pretty standard button:
 
-   .. image:: images/icon1.png
-       :width: 50 %
-       :alt: Button With no Icon 
+   .. raw:: html
+
+       <div class="container">
+           <h2>Download the file here:</h2>
+           <a class="btn btn-primary" href="#">Download</a>
+       </div>
 
 #. Next, we want to create an icon which will add visual appeal and instant recognition to the button. First, we need to find a suitable icon to use. You've added the Font Awesome library of gliphy icons to the page, but there are over 900 free icons in the library. So, let's go digging. Head over to their website and search through the `free icons <https://fontawesome.com/icons?d=gallery&q=Down&m=free>`_. For example, type the word "Download" into the search bar and see what comes up:
 
@@ -55,9 +58,9 @@ We're going to see how to add icons to buttons and to use them as buttons in the
 
    And observe the results:
 
-   .. image:: images/icon3.png
-       :width: 100 %
-       :alt: With Icon
+   .. raw:: html
+
+       <a class="btn btn-primary" href="#"><i class="fas fa-download"></i>Download</a>
 
 Note: 
 ~~~~~~
@@ -67,7 +70,7 @@ Font Awesome's convention of using :code:`<i>` tags to denote an icon is nice be
 Make it fancy
 ~~~~~~~~~~~~~
 
-Font Awesome's `documentation <https://fontawesome.com/how-to-use/svg-with-js#basic-use>`_ is short but has plenty of interesting options for you to try.
+Font Awesome's `basic documentation <https://fontawesome.com/how-to-use/svg-with-js#basic-use>`_ is short but has plenty of interesting options for you to try.
 
 And for the most part, they are accomplished simply by *adding classes* to the element with the icon. It's as simple as that.
 
@@ -83,7 +86,12 @@ Among the features outlined in their documentation are:
       </div>
 
 
-  .. image:: images/icon_spock.png
+  .. raw:: html
+
+      <div style="font-size:3em; color:GoldenRod">
+          <i class="fas fa-hand-spock"></i>
+        
+      </div>
 
 * Icons can be animated:
 
@@ -94,7 +102,9 @@ Among the features outlined in their documentation are:
       </div>
 
   .. raw:: html
-
+      
+      <div class="fa-3x">
       <svg class="svg-inline--fa fa-sync fa-w-16 fa-spin" aria-hidden="true" data-prefix="fas" data-icon="sync" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z"></path></svg>
+      </div>
 
 They can also be resized, rotated, translated, and nested on top of each other. Experiment and see what you can create with icons. They're basically the future of language at this point.
