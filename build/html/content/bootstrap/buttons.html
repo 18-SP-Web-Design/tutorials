@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Buttons and Icons &#8212; ITECH 270 0.1b documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1b',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Figures" href="figures.html" />
+ <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="buttons-and-icons">
+<h1>Buttons and Icons<a class="headerlink" href="#buttons-and-icons" title="Permalink to this headline">¶</a></h1>
+<p>To include everything there is to talk about in Bootstrap eventually begins to look like just listing all of the classes and showing examples of how they work. Once you have the basics down, there’s really little point in doing that since you can just browse the <a class="reference external" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">documentation</a> to find the component you’re looking for.</p>
+<p>But there is one other thing that warrants at least a brief tutorial: Icons. Bootstrap used to include an icon font by default, but in Bootstrap 4, it was removed. Instead, they recommend any number of icon fonts that are available (often for free) elsewhere and which have easy Bootstrap integration.</p>
+<p>First of all, what do we mean by “icon”? Well, in modern design, an icon is a specialized graphical element which can convey meaning without being a word. We have been using icons for a long time. We all know that to save a document, you usually click on the icon that looks like an old-style computer disk. And there are some equally universal icons out there creating a sort of glyph meta-language.</p>
+<p>A number of companies have made icons into a design language. For the sake of this tutorial, we will use the icon font designed by <a class="reference external" href="https://fontawesome.com/">Font Awesome</a>, since they are kind enough to use a CDN to distrubte it.</p>
+<p>We’re going to see how to add icons to buttons and to use them as buttons in themselves. We’ll combine their functionality with Bootstrap for very nice results. So let’s get started.</p>
+<ol class="arabic">
+<li><p class="first">Open your basic Bootstrap template and add the Font Awesome CDN to the <code class="code docutils literal"><span class="pre">&lt;head&gt;</span></code> element:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://use.fontawesome.com/releases/v5.0.6/js/all.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Let’s start with a simple button. Let’s say you want to create a download link. You can do this in Bootstrap very easily:</p>
+<div class="highlight-html"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Download the file here:<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Download<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+</li>
+<li><p class="first">This will create a pretty standard button:</p>
+<a class="reference internal image-reference" href="../../_images/icon1.png"><img alt="Button With no Icon" src="../../_images/icon1.png" style="width: 50%;" /></a>
+</li>
+<li><p class="first">Next, we want to create an icon which will add visual appeal and instant recognition to the button. First, we need to find a suitable icon to use. You’ve added the Font Awesome library of gliphy icons to the page, but there are over 900 free icons in the library. So, let’s go digging. Head over to their website and search through the <a class="reference external" href="https://fontawesome.com/icons?d=gallery&amp;q=Down&amp;m=free">free icons</a>. For example, type the word “Download” into the search bar and see what comes up:</p>
+<a class="reference internal image-reference" href="../../_images/icon2.png"><img alt="Searching for an icon" src="../../_images/icon2.png" style="width: 100%;" /></a>
+</li>
+<li><p class="first">All you really need is to see the name of the icon which is right underneath it. However, if you click on the icon, it will show you some examples of the icon in action. Font Awesome’s recommended way of including an icon looks like this:</p>
+<div class="highlight-html"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-download&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p>Simply add this bit of code right into your link:</p>
+<div class="highlight-html"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-download&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>Download<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p>And observe the results:</p>
+<a class="reference internal image-reference" href="../../_images/icon3.png"><img alt="With Icon" src="../../_images/icon3.png" style="width: 100%;" /></a>
+</li>
+</ol>
+<div class="section" id="note">
+<h2>Note:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
+<p>Font Awesome’s convention of using <code class="code docutils literal"><span class="pre">&lt;i&gt;</span></code> tags to denote an icon is nice because it is brief succinct, however it is not semantically correct since that tag already has a semantic meaning in HTML. Technically, it would be more correct to use a <code class="code docutils literal"><span class="pre">&lt;span&gt;</span></code> tag, however, you will almost certainly not notice any ill effects from using the i tag since the way Font Awesome’s JavaScript library works, it simply replaces the entire element with an <code class="code docutils literal"><span class="pre">&lt;svg&gt;</span></code> element anyway. So use the i. It’s nice and simple.</p>
+</div>
+<div class="section" id="make-it-fancy">
+<h2>Make it fancy<a class="headerlink" href="#make-it-fancy" title="Permalink to this headline">¶</a></h2>
+<p>Font Awesome’s <a class="reference external" href="https://fontawesome.com/how-to-use/svg-with-js#basic-use">documentation</a> is short but has plenty of interesting options for you to try.</p>
+<p>And for the most part, they are accomplished simply by <em>adding classes</em> to the element with the icon. It’s as simple as that.</p>
+<p>Among the features outlined in their documentation are:</p>
+<ul>
+<li><p class="first">Icons inherit CSS styling:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;font-size:3em; color:GoldenRod&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-hand-spock&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<img alt="../../_images/icon_spock.png" src="../../_images/icon_spock.png" />
+</li>
+<li><p class="first">Icons can be animated:</p>
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fa-3x&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-sync fa-spin&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<svg class="svg-inline--fa fa-sync fa-w-16 fa-spin" aria-hidden="true" data-prefix="fas" data-icon="sync" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z"></path></svg></li>
+</ul>
+<p>They can also be resized, rotated, translated, and nested on top of each other. Experiment and see what you can create with icons. They’re basically the future of language at this point.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">ITECH 270</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Bootstrap</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="introduction.html">Bootstrap</a><ul>
+      <li>Previous: <a href="figures.html" title="previous chapter">Figures</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Eric Kuha.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/content/bootstrap/buttons.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
