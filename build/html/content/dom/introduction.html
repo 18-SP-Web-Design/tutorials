@@ -24,6 +24,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Intro to JavaScript" href="javascript.html" />
     <link rel="prev" title="Buttons and Icons" href="../bootstrap/buttons.html" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -45,6 +46,9 @@
 <div class="section" id="chapter-contents">
 <h2>Chapter Contents<a class="headerlink" href="#chapter-contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="javascript.html">Intro to JavaScript</a></li>
+</ul>
 </div>
 </div>
 <div class="section" id="introduction">
@@ -55,7 +59,31 @@
 <p>We can use JS to react to events, add and delete elements, change styles, and even content. The interface between HTML and JS gives total control of all aspects of the web page. This is both good and bad, by the way.</p>
 <p>The purpose of this chapter is to give a <em>brief</em> introduction to JavaScript the language, but with a particular emphasis on the way it interacts with the DOM.</p>
 <p>First, a quick example:</p>
-<script async src="http://jsfiddle.net/erickuha/ura0xxk1/embed/html,result/dark/"></script><p>Go ahead and try to change the contenst of the &lt;h1&gt; tag and the end of the script.</p>
+<div class="highlight-html"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;site-heading&quot;</span><span class="p">&gt;</span>
+    Hello World!
+<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;site-heading&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;Hello JS!&quot;</span><span class="p">;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</pre></div>
+</td></tr></table></div>
+<p>To see this in action, check this jsfiddle:</p>
+<script async src="http://jsfiddle.net/erickuha/ura0xxk1/embed/result/"></script><p>The purpose of these tutorials is not to make you an expert at general-purpose programming. We’ll learn just enough JavaScript syntax to know how to use it to manipulate the DOM for building web pages. That said, some basic concepts like variables and sequential execution are covered on the next page.</p>
 </div>
 </div>
 
@@ -85,6 +113,7 @@
 <ul>
   <li><a href="../../index.html">Documentation overview</a><ul>
       <li>Previous: <a href="../bootstrap/buttons.html" title="previous chapter">Buttons and Icons</a></li>
+      <li>Next: <a href="javascript.html" title="next chapter">Intro to JavaScript</a></li>
   </ul></li>
 </ul>
 </div>

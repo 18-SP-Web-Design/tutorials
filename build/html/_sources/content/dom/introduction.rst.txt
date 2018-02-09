@@ -7,6 +7,8 @@ Chapter Contents
 .. toctree:: 
     :maxdepth: 1
 
+    javascript
+
 Introduction
 ~~~~~~~~~~~~
 
@@ -24,8 +26,25 @@ The purpose of this chapter is to give a *brief* introduction to JavaScript the 
 
 First, a quick example:
 
+.. code-block:: html
+    :linenos:
+
+    <body>
+
+    <h1 id="site-heading">
+        Hello World!
+    </h1>
+
+    <script>
+        document.getElementById("site-heading").innerHTML = "Hello JS!";
+    </script>
+  
+    </body>
+
+To see this in action, check this jsfiddle:
+
 .. raw:: html
 
-    <script async src="http://jsfiddle.net/erickuha/ura0xxk1/embed/html,result/dark/"></script>
+    <script async src="http://jsfiddle.net/erickuha/ura0xxk1/embed/result/"></script>
 
-Go ahead and try to change the contenst of the <h1> tag and the end of the script.
+The purpose of these tutorials is not to make you an expert at general-purpose programming. We'll learn just enough JavaScript syntax to know how to use it to manipulate the DOM for building web pages. That said, some basic concepts like variables and sequential execution are covered on the next page.

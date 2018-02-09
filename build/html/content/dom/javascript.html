@@ -1,0 +1,165 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Intro to JavaScript &#8212; ITECH 270 0.1b documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1b',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Document Object Model and JavaScript" href="introduction.html" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="intro-to-javascript">
+<h1>Intro to JavaScript<a class="headerlink" href="#intro-to-javascript" title="Permalink to this headline">¶</a></h1>
+<p>As mentioned earlier, JavaScript is a general-purpose programming language. It doesn’t have to be used for web development, but it does have a few advantage that make it ideally suited to the task. First, it’s cross-platform, meaning that it can be executed on any computer in the world (for the most part). Second, it is simple enough and lightweight enough that it can be deployed as a package in a web browser, and indeed, every web browser worth using has a JS parser built-in. Lastly, JavaScript was in the right place at the right time. It’s easier to learn that Java, and it got its start just as a new, less complex language (than Java) was needed for web-scripting.</p>
+<p>So how do I do stuff with JS?</p>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>Think of a variable as a container that you put things in. Almost all programming languages have some way of storing a value for later use and JavaScript uses variables. To declare a variable, you use the <code class="code docutils literal"><span class="pre">var</span></code> keyword:</p>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myName</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Note, that when you create a variable, it is initially empty. To store something in it, we use the <strong>assignment operator</strong>, <code class="code docutils literal"><span class="pre">=</span></code>.</p>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="nx">myName</span> <span class="o">=</span> <span class="s2">&quot;Eric&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>You can combine these into one line like this:</p>
+<div class="highlight-js"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">myName</span> <span class="o">=</span> <span class="s2">&quot;Eric&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Notice that JavaScript uses semicolons to terminate all lines of code. There is some wiggle room with this rule, but it’s probably a good idea to get into the habit as early as possible.</p>
+</div>
+<div class="section" id="data-types">
+<h2>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
+<p>There are several basic data types that JavaScript supports. For the purposes of these tutorials, we will only use a couple, but here’s a rundown of the most common ones:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="59%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">DataType</th>
+<th class="head">Description</th>
+<th class="head">Syntax</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>String</td>
+<td>Just plain text. Strings of characters</td>
+<td><code class="code docutils literal"><span class="pre">var</span> <span class="pre">myName</span> <span class="pre">=</span> <span class="pre">&quot;Eric&quot;;</span></code></td>
+</tr>
+<tr class="row-odd"><td>Number</td>
+<td>Numbers obey most algebraic principles</td>
+<td><code class="code docutils literal"><span class="pre">var</span> <span class="pre">myNum</span> <span class="pre">=</span> <span class="pre">6;</span></code></td>
+</tr>
+<tr class="row-even"><td>Boolean</td>
+<td>A true/false value.</td>
+<td><code class="code docutils literal"><span class="pre">var</span> <span class="pre">myBool</span> <span class="pre">=</span> <span class="pre">true;</span></code></td>
+</tr>
+<tr class="row-odd"><td>Array</td>
+<td>A way of storing multiple values in one variable</td>
+<td><code class="code docutils literal"><span class="pre">var</span> <span class="pre">myArray</span> <span class="pre">=</span> <span class="pre">[1,</span> <span class="pre">'Eric',</span> <span class="pre">true,</span> <span class="pre">15];</span></code></td>
+</tr>
+<tr class="row-even"><td>Object</td>
+<td>Objects are everything else. This will be important when we start manipulating the DOM.</td>
+<td><code class="code docutils literal"><span class="pre">myDiv</span> <span class="pre">=</span> <span class="pre">document.getElementById(&quot;someDiv&quot;);</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">ITECH 270</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../bootstrap/introduction.html">Bootstrap</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="introduction.html">Document Object Model and JavaScript</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="introduction.html">Document Object Model and JavaScript</a><ul>
+      <li>Previous: <a href="introduction.html" title="previous chapter">Document Object Model and JavaScript</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Eric Kuha.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../../_sources/content/dom/javascript.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
