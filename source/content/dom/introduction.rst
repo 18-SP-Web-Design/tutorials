@@ -24,11 +24,17 @@ The purpose of this chapter is to give a *brief* introduction to JavaScript the 
 
 First, a quick example:
 
-.. raw:: html
+.. code-block:: html
+    :linenos:
 
-    <script async src="http:////jsfiddle.net/erickuha/ura0xxk1/embed/html,result/dark/"></script>
+    <body>
 
-Go ahead and try to change the contenst of the <h1> tag and the end of the script.
+    <h1 id="site-heading">
+        Hello World!
+    </h1>
 
-
-
+    <script>
+        document.getElementById("site-heading").innerHTML = "Hello JS!";
+    </script>
+  
+    </body>

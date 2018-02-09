@@ -26,9 +26,6 @@ First, a quick example:
 
 .. raw:: html
 
-    <script async src="http:////jsfiddle.net/erickuha/ura0xxk1/embed/html,result/dark/"></script>
+    <script async src="http://jsfiddle.net/erickuha/ura0xxk1/embed/html,result/dark/"></script>
 
 Go ahead and try to change the contenst of the <h1> tag and the end of the script.
-
-
-
