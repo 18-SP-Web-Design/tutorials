@@ -7,6 +7,8 @@ Chapter Contents
 .. toctree:: 
     :maxdepth: 1
 
+    javascript
+
 Introduction
 ~~~~~~~~~~~~
 
@@ -38,3 +40,11 @@ First, a quick example:
     </script>
   
     </body>
+
+To see this in action, check this jsfiddle:
+
+.. raw:: html
+
+    <script async src="http://jsfiddle.net/erickuha/ura0xxk1/embed/result/"></script>
+
+The purpose of these tutorials is not to make you an expert at general-purpose programming. We'll learn just enough JavaScript syntax to know how to use it to manipulate the DOM for building web pages. That said, some basic concepts like variables and sequential execution are covered on the next page.
