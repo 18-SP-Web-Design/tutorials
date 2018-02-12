@@ -98,6 +98,120 @@
 </tr>
 </tbody>
 </table>
+<p>We can use variables and datatypes to store just about any kind of data you can imagine. In fact, most lines of JavaScript code will include some assigning of values to variables. As already stated, we use the assignment operator, which in JavaScript is the equal sign (=), to do this. We can play around with some variable assignments. Let’s look at some examples.</p>
+</div>
+<div class="section" id="how-to-use-javascript">
+<h2>How to use JavaScript<a class="headerlink" href="#how-to-use-javascript" title="Permalink to this headline">¶</a></h2>
+<p>Create a basic web page. Inside the page, create a <code class="code docutils literal"><span class="pre">&lt;script&gt;</span></code> tag pair inside the body add the following code:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
+    var num1 = 7;
+    var num2 = 3;
+    var sum = 7 + 3;
+    alert(&quot;The sum is &quot; + sum);
+&lt;/script&gt;
+</pre></div>
+</div>
+<p>When you load the page, it should display an alert with the message:</p>
+<img alt="../../_images/alert1.png" src="../../_images/alert1.png" />
+<p>In this manner, you can do computations and store values.</p>
+</div>
+<div class="section" id="document-object-model">
+<h2>Document Object Model<a class="headerlink" href="#document-object-model" title="Permalink to this headline">¶</a></h2>
+<p>Next, let’s play with how we can manipulate the elements of a web page. Built into every web browser is a hierarchy of objects that represent the currently displayed web page. These can be accessed through the use of JavaScript. How it typically works is you start at the top level and work your way down through the hierarchy. Syntactically, you use the dot operator, the period to separate the names of these “objects”. For example, in your test web page, replace the JavaScript code with the following line:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
+    document.body.style.background  = &quot;DarkRed&quot;;
+&lt;/script&gt;
+</pre></div>
+</div>
+<p>We start at the top which is the docuemnt, and from the document, we pick out the body and then the styles affecting the body, and then specifically select the background. We set it equal to one of the named colors in HTML5, “DarkRed”. Reload the page and observe the results.</p>
+<div class="section" id="objects">
+<h3>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h3>
+<p>The primary object is the <code class="code docutils literal"><span class="pre">document</span></code>. From there, you dig down to other objects or methods which help you find other objects. Try a few of these out:</p>
+</div>
+<div class="section" id="find-things-in-the-dom">
+<h3>Find things in the DOM<a class="headerlink" href="#find-things-in-the-dom" title="Permalink to this headline">¶</a></h3>
+<p>You can find elements in the DOM by using convenient helper methods. The most common ones are these:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="51%" />
+<col width="49%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Object</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>document.getElementById(id)</td>
+<td>Finds an element by its id attribute</td>
+</tr>
+<tr class="row-odd"><td>document.getElementsByTagName(name)</td>
+<td>Finds an element by its tag</td>
+</tr>
+<tr class="row-even"><td>document.getElementsByClassName(name)</td>
+<td>Find elements by their class name</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="manipulating-elements">
+<h3>Manipulating Elements<a class="headerlink" href="#manipulating-elements" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Object</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><em>element</em>.innerHTML = <em>some content</em></td>
+<td>Changes the text inside of a set of tags</td>
+</tr>
+<tr class="row-odd"><td><em>element.attribute</em> = <em>some value</em></td>
+<td>Changes the value of some attribute in an HTML tag</td>
+</tr>
+<tr class="row-even"><td><em>element</em>.setAttribute(<em>attribute,value</em>)</td>
+<td>Changes the value of some attribute in an HTML tag</td>
+</tr>
+<tr class="row-odd"><td><em>element</em>.style.*property*</td>
+<td>Changes a style element of an HTML tag.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="creating-elements">
+<h3>Creating Elements<a class="headerlink" href="#creating-elements" title="Permalink to this headline">¶</a></h3>
+<p>You can even create and destroy elements already in a web page.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="58%" />
+<col width="42%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Object</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>document.createElement(<em>element</em>)</td>
+<td>Creates an element</td>
+</tr>
+<tr class="row-odd"><td>document.removeChild(<em>element</em>)</td>
+<td>Remove an HTML element</td>
+</tr>
+<tr class="row-even"><td>document.appendChild(<em>element</em>)</td>
+<td>Add an HTML element</td>
+</tr>
+<tr class="row-odd"><td>document.replaceChild(<em>element</em>)</td>
+<td>Replace an HTML element</td>
+</tr>
+</tbody>
+</table>
+<p>You may have to experiment a little with these to figure out just how they work, but here are a few examples to get you started.</p>
+</div>
 </div>
 </div>
 
