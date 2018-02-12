@@ -54,7 +54,7 @@ How to use JavaScript
 
 Create a basic web page. Inside the page, create a :code:`<script>` tag pair inside the body add the following code:
 
-.. code-block:: javascript
+.. code-block:: html
 
     <script>
         var num1 = 7;
@@ -74,7 +74,7 @@ Document Object Model
 
 Next, let's play with how we can manipulate the elements of a web page. Built into every web browser is a hierarchy of objects that represent the currently displayed web page. These can be accessed through the use of JavaScript. How it typically works is you start at the top level and work your way down through the hierarchy. Syntactically, you use the dot operator, the period to separate the names of these "objects". For example, in your test web page, replace the JavaScript code with the following line:
 
-.. code-block:: javascript
+.. code-block:: html
 
     <script>
         document.body.style.background  = "DarkRed";

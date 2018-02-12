@@ -103,12 +103,12 @@
 <div class="section" id="how-to-use-javascript">
 <h2>How to use JavaScript<a class="headerlink" href="#how-to-use-javascript" title="Permalink to this headline">¶</a></h2>
 <p>Create a basic web page. Inside the page, create a <code class="code docutils literal"><span class="pre">&lt;script&gt;</span></code> tag pair inside the body add the following code:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
-    var num1 = 7;
-    var num2 = 3;
-    var sum = 7 + 3;
-    alert(&quot;The sum is &quot; + sum);
-&lt;/script&gt;
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="kd">var</span> <span class="nx">num1</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">num2</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">sum</span> <span class="o">=</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;The sum is &quot;</span> <span class="o">+</span> <span class="nx">sum</span><span class="p">);</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>When you load the page, it should display an alert with the message:</p>
@@ -118,9 +118,9 @@
 <div class="section" id="document-object-model">
 <h2>Document Object Model<a class="headerlink" href="#document-object-model" title="Permalink to this headline">¶</a></h2>
 <p>Next, let’s play with how we can manipulate the elements of a web page. Built into every web browser is a hierarchy of objects that represent the currently displayed web page. These can be accessed through the use of JavaScript. How it typically works is you start at the top level and work your way down through the hierarchy. Syntactically, you use the dot operator, the period to separate the names of these “objects”. For example, in your test web page, replace the JavaScript code with the following line:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>&lt;script&gt;
-    document.body.style.background  = &quot;DarkRed&quot;;
-&lt;/script&gt;
+<div class="highlight-html"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">background</span>  <span class="o">=</span> <span class="s2">&quot;DarkRed&quot;</span><span class="p">;</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </pre></div>
 </div>
 <p>We start at the top which is the docuemnt, and from the document, we pick out the body and then the styles affecting the body, and then specifically select the background. We set it equal to one of the named colors in HTML5, “DarkRed”. Reload the page and observe the results.</p>
